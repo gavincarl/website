@@ -1,13 +1,129 @@
-/* divs */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,300&display=swap');
 
 body {
+  font-family: 'Cormorant Garamond', serif;
+  background: rgb(255, 243, 189);
 }
 
-.main {
+/* top */
+
+#topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 10vw;
+  width: 100vw;
+  max-height: 100px;
+  background: rgb(255, 243, 189);
+  border-bottom: 5px solid rgb(128, 121, 85);
+}
+
+.topname {
+  padding-left: 30px;
+  font-size: 9vw;
+  font-style: italic;
+  color: rgb(128, 121, 85);
+  white-space: nowrap;
+}
+
+#announce {
+  position: absolute;
+  background-color: beige;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+
+/* flexboxes */
+
+.flexbox {
+  margin-top: 10vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: center;
+  padding-top: 12px;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
+
+.dev2 {
+  flex: 100vw;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: rgb(244, 151, 142);
+}
+
+.bo1 {
+  flex: 80vw;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.bo2 {
+  flex: 100vw;
+  margin: 10px;
+}
+
+.bo3 {
+  flex: 5vw;
+  padding: 10px;
+  margin: 10px 100px;
+  background-color: rgb(255, 229, 122);
+}
+
+.bo4 {
+  flex: 5vw;
+  padding: 10px;
+  margin: 10px 100px;
+  background-color: rgb(225, 89, 152);
+}
+
+.bo5 {
+  flex: 5vw;
+  padding: 10px;
+  margin: 10px 100px;
+  background-color: rgb(255, 189, 122);
+}
+
+.bo6 {
+  flex: 5vw;
+  padding: 10px;
+  margin: 10px 100px;
+  background-color: rgb(55, 189, 122);
+}
+
+.bo7 {
+  flex: 100vw;
+  padding: 10px;
+  margin: 10px 100px;
+  background-color: rgb(255, 89, 122);
+}
+
+/* mobile */
+
+@media only screen and (max-width: 800px) {
+  .dev2, .bo1, .bo2, .bo3, .bo4, .bo5, .bo6, .bo7{
+    flex: 100vw;
+  }
+  .flexbox {
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
+}
+
+/* topbar size adjustment */
+
+@media only screen and (min-width: 1000px) {
+  .topname {
+     font-size: 90px;
+  }
+  .flexbox {
+    margin-top: 100px;
+  }
+}r
+
+/* OLD 
 
 #sideleft {
   position: absolute;
@@ -39,8 +155,6 @@ body {
   );
 }
 
-/* text */
-
 #intro {
   padding-left: 15vw;
   padding-right: 15vw;
@@ -66,37 +180,4 @@ body {
   text-shadow: 0px 0px 40px #111111;
 }
 
-/* boxes */
-
-#box1 {
-  background-color: rgba(250, 132, 100, 0.5);
-  height: 150px;
-  width: 220px;
-  position: absolute;
-  z-index: -1;
-}
-
-#box2 {
-  background-color: rgba(159, 229, 224, 0.6);
-  height: 172px;
-  width: 194px;
-  position: absolute;
-  z-index: -1;
-  margin-left: 110px;
-  margin-top: 73px;
-}
-
-#box3 {
-  background-color: rgba(22, 183, 10, 0.3);
-  height: 185px;
-  width: 319px;
-  position: absolute;
-  z-index: -1;
-  margin-left: 292px;
-  margin-top: 33px;
-}
-
-img {
-  height: 11vw;
-  padding: 3vw;
-}
+*/
