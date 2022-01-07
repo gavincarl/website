@@ -6,14 +6,14 @@ let bb = 213
 let posX, posY;
 let tileSize = 100;
 function windowResized() {
-  resizeCanvas(windowWidth, windowWidth)
+  resizeCanvas(windowWidth-15, windowWidth-15)
   background(br, bg, bb);
 }
 
 
 function setup() {
   tileSize = windowWidth/20;
-  var cnv =createCanvas(windowWidth, windowWidth);
+  var cnv =createCanvas(windowWidth-15, windowWidth-15);
   cnv.position(0,0);
   background(br, bg, bb);
 
