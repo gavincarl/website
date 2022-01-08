@@ -13,17 +13,13 @@ body {
 }
 
 canvas {
-  display: block;
+  position: fixed;
+  overflow: hidden;
 }
 
 h2 {
   font-size: 1.5vw;
 }
-
-/*.pills {
-  position: absolute;
-  z-index: 0;
-}*/
 
 :root {
   --gray: #353535;
@@ -46,7 +42,7 @@ h2 {
 .topbar {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   height: 10vw;
   width: 100vw;
   max-height: 100px;
@@ -57,7 +53,7 @@ h2 {
 .topflex {
   padding-left: 3vw;
   padding-right: 3vw;
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
@@ -293,7 +289,7 @@ h2 {
   width: 100%;
 }
 
-.topflexPage {
+.topflexPage{
   font-size: 5vw;
   margin-top: 1vh;
   width: 20%;
@@ -305,11 +301,11 @@ h2 {
 /* general */
 
 .wrapper {
-  margin-top: 32vw;
+  margin-top: 28vw;
 }
 
 .para {
-  font-size: 22px;
+  font-size: 4vw;
 }
 
 .roundimg {
@@ -350,7 +346,7 @@ h2 {
   writing-mode: vertical-rl;
   font-size: 8vw;    
   border-radius: 2em;
-  transform: rotate(-4deg);
+  transform: rotate(-3deg);
 }
 
 .newcover {
