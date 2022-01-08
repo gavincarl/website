@@ -321,6 +321,7 @@ h2 {
 .squareimg {
   height: 70vw;
   width: 70vw;
+  border-radius: 2em;
 }
 
 .squareimg:hover {
