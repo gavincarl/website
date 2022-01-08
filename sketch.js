@@ -47,8 +47,6 @@ function windowResized() {
 
 
 function draw() {
-
-
 if (window.innerWidth>window.innerHeight) {
     strokeWeight(12);
     let rng = random(20);
