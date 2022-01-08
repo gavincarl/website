@@ -19,10 +19,10 @@ function setup() {
     tileSize = windowWidth/20;
     cnv = createCanvas(winW-15, winW);
   } else {
-    tileSize = window.innerWidth/10;
-    winW = window.innerWidth;
-    winH = (window.innerHeight*3);
-    var cnv = createCanvas(winW, winH);
+    // tileSize = window.innerWidth/10;
+    // winW = window.innerWidth;
+    // winH = (window.innerHeight*3);
+    // var cnv = createCanvas(winW, winH);
   }
   cnv.position(0,0);
   background(br, bg, bb);
@@ -36,10 +36,10 @@ function windowResized() {
     tileSize = windowWidth/20;
     cnv = createCanvas(winW-15, winW);
   } else {
-    tileSize = window.innerWidth/10;
-    winW = window.innerWidth;
-    winH = (window.innerHeight*3);
-    var cnv = createCanvas(winW, winH);
+    // tileSize = window.innerWidth/10;
+    // winW = window.innerWidth;
+    // winH = (window.innerHeight*3);
+    // var cnv = createCanvas(winW, winH);
   }
   cnv.position(0,0);
   background(br, bg, bb);
@@ -81,37 +81,37 @@ if (window.innerWidth>window.innerHeight) {
 
   } else {
 
-      strokeWeight(12);
-    let rng = random(20);
-    r = random(200,255);
-    g = random(150,220);
-    b = random(150,220);
-    let d = random(20);
+  //     strokeWeight(12);
+  //   let rng = random(20);
+  //   r = random(200,255);
+  //   g = random(150,220);
+  //   b = random(150,220);
+  //   let d = random(20);
 
-  //decide what to draw
-    //do nothing
-    if (rng < 10) {   
-      }
-    else if (rng < 17) {
-      //cover pill
-        drawPill(br,bg,bb,posX,posY,tileSize,1,1)
-        drawPill(br,bg,bb,posX,posY,tileSize,6,1)
-      }
-    else {
-      //cover pill and place a new one
-        drawPill(br,bg,bb,posX,posY,tileSize,1,1)
-        drawPill(br,bg,bb,posX,posY,tileSize,6,1)
-        drawPill(r,g,b,posX,posY,tileSize,d,0)
-    }
+  // //decide what to draw
+  //   //do nothing
+  //   if (rng < 10) {   
+  //     }
+  //   else if (rng < 17) {
+  //     //cover pill
+  //       drawPill(br,bg,bb,posX,posY,tileSize,1,1)
+  //       drawPill(br,bg,bb,posX,posY,tileSize,6,1)
+  //     }
+  //   else {
+  //     //cover pill and place a new one
+  //       drawPill(br,bg,bb,posX,posY,tileSize,1,1)
+  //       drawPill(br,bg,bb,posX,posY,tileSize,6,1)
+  //       drawPill(r,g,b,posX,posY,tileSize,d,0)
+  //   }
 
-  //random location 
-    tileCountY = round(winH/tileSize);
+  // //random location 
+  //   tileCountY = round(winH/tileSize);
 
 
-    let skipX = floor(random(10));
-    let skipY = floor(random(tileCountY));
-    posY = tileSize*skipY;
-    posX = tileSize*skipX;
+  //   let skipX = floor(random(10));
+  //   let skipY = floor(random(tileCountY));
+  //   posY = tileSize*skipY;
+  //   posX = tileSize*skipX;
 
   }
 }
