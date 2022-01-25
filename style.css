@@ -48,10 +48,11 @@ h2 {
   width: 100vw;
   max-height: 100px;
   z-index: 2;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 .topflex {
+  list-style-type: none;
   padding-left: 3vw;
   padding-right: 3vw;
   justify-content: space-evenly;
